@@ -61,8 +61,26 @@
                 </tbody>
             </table>
         </div>
+        <br>
         <div class="form">
-            
+            <h3>Нужна помощь в выбооре идеального зала? Закажи обратный звонок</h3>
+            <form action="/register" >
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="user_name" required placeholder="Введите ваше имя">
+                <label for="phone-number">Номер телефона для свзязи</label>
+                <input type="text" id="phone-number" name="user_number" required placeholder="+7(000)XXX-XX-XX">
+                <label for="guests">Количество гостей:</label>
+                <select name="guests" id="guests">
+                    <option value="25">До 25</option>
+                    <option value="50">До 50</option>
+                    <option value="100">До 100</option>
+                    <option value="200">До 200</option>
+                </select>
+                <label>
+                    <input type="checkbox" name="agreement" required> Я согласен(-сна) с условиями
+                </label>
+                <button type="submit">Отправить заявку</button>
+            </form>
         </div>
     </div>
 </body>
