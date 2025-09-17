@@ -9,7 +9,7 @@
 
 <body>
     <div class="container">
-        <div class="header">
+        <header class="main-header">
             <div class="logo">
                 <img src="https://img.freepik.com/free-vector/abstract-company-logo_53876-120501.jpg" alt="Логотип"
                     width="65" height="65">
@@ -19,8 +19,8 @@
                     height="50">
                 <a href="https://wa.me/79281988835">Связаться с нами</a>
             </div>
-        </div>
-        <div class="main-content">
+        </header>
+        <main class="main-content">
             <h1>Банкетные залы для ваших мероприятий</h1>
             <h3>Праздник у нас - это про атмосферу!</h3>
             <br>
@@ -35,81 +35,80 @@
             </audio>
             <img src="https://img.freepik.com/free-photo/wonderful-wedding-table-amazing-restaurant_8353-9875.jpg"
                 alt="Главная картинка" width="1200" height="600">
-        </div>
-        <div class="info-about-us">
-            <h3>Почему нас выбирают?</h3>
-            <p>Потому что мы <strong>САМЫЕ</strong>:</p>
-            <ul>
-                <li>Самые выгодные</li>
-                <li>Самые атмосферные</li>
-                <li>Самые стильные</li>
-            </ul>
-        </div>
-        <div class="table">
-            <table>
-                <caption>Информация о каждом зале</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Название</th>
-                        <th scope="col">Вместительность</th>
-                        <th scope="col">Цена за час</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Natural Vibe</td>
-                        <td>до 25 человек</td>
-                        <td>15 990 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Red wine</td>
-                        <td>до 50 человек</td>
-                        <td>25 990 р.</td>
-                    </tr>
-                    <tr>
-                        <td>White room</td>
-                        <td>до 100 человек</td>
-                        <td>45 990 р.</td>
-                    </tr>
-                    <tr>
-                        <td>Golden river</td>
-                        <td>до 200 человек</td>
-                        <td>95 990 р.</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <div class="info-about-us">
+                <h3>Почему нас выбирают?</h3>
+                <p>Потому что мы <strong>САМЫЕ</strong>:</p>
+                <ul>
+                    <li>Самые выгодные</li>
+                    <li>Самые атмосферные</li>
+                    <li>Самые стильные</li>
+                </ul>
+            </div>
+            <div class="table">
+                <table>
+                    <caption>Информация о каждом зале</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Название</th>
+                            <th scope="col">Вместительность</th>
+                            <th scope="col">Цена за час</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Natural Vibe</td>
+                            <td>до 25 человек</td>
+                            <td>15 990 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Red wine</td>
+                            <td>до 50 человек</td>
+                            <td>25 990 р.</td>
+                        </tr>
+                        <tr>
+                            <td>White room</td>
+                            <td>до 100 человек</td>
+                            <td>45 990 р.</td>
+                        </tr>
+                        <tr>
+                            <td>Golden river</td>
+                            <td>до 200 человек</td>
+                            <td>95 990 р.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="form">
+                <h3>Нужна помощь в выбооре идеального зала? Закажи обратный звонок</h3>
+                <form action="/register">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="user_name" required placeholder="Введите ваше имя">
+                    <label for="phone-number">Номер телефона для свзязи</label>
+                    <input type="text" id="phone-number" name="user_number" required placeholder="+7(000)XXX-XX-XX">
+                    <label for="guests">Количество гостей:</label>
+                    <select name="guests" id="guests">
+                        <option value="25">До 25</option>
+                        <option value="50">До 50</option>
+                        <option value="100">До 100</option>
+                        <option value="200">До 200</option>
+                    </select>
+                    <label>
+                        <input type="checkbox" name="agreement" required> Я согласен(-сна) с условиями
+                    </label>
+                    <button type="submit">Отправить заявку</button>
+                </form>
+        </main>
         <br>
-        <div class="form">
-            <h3>Нужна помощь в выбооре идеального зала? Закажи обратный звонок</h3>
-            <form action="/register">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="user_name" required placeholder="Введите ваше имя">
-                <label for="phone-number">Номер телефона для свзязи</label>
-                <input type="text" id="phone-number" name="user_number" required placeholder="+7(000)XXX-XX-XX">
-                <label for="guests">Количество гостей:</label>
-                <select name="guests" id="guests">
-                    <option value="25">До 25</option>
-                    <option value="50">До 50</option>
-                    <option value="100">До 100</option>
-                    <option value="200">До 200</option>
-                </select>
-                <label>
-                    <input type="checkbox" name="agreement" required> Я согласен(-сна) с условиями
-                </label>
-                <button type="submit">Отправить заявку</button>
-            </form>
-        </div>
-        <br>
-        <div class="video">
-            <video controls poster="preview.jpg" width="600" height="350">
-                <source
-                    src="img/4783595_Couple_Wedding_3840x2160 (1).mp4"
-                    type="video/mp4">
-                <source src="img/4783595_Couple_Wedding_3840x2160 (1).webm" type="video/webm">
-                Ваш браузер не поддерживает видео элемент.
-            </video>
-        </div>
+        <footer>
+            <div class="video">
+                <video controls poster="preview.jpg" width="600" height="350">
+                    <source src="img/4783595_Couple_Wedding_3840x2160 (1).mp4" type="video/mp4">
+                    <source src="img/4783595_Couple_Wedding_3840x2160 (1).webm" type="video/webm">
+                    Ваш браузер не поддерживает видео элемент.
+                </video>
+            </div>
+        </footer>
     </div>
 </body>
 
